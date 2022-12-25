@@ -2,7 +2,7 @@ let weather = [];
 
 async function getWeather(country) {
   let res = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=ea696ea3b8434a8f981142905222412 &q=${country}&q=07112&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=ea696ea3b8434a8f981142905222412 &q=${country}&q=07112&days=3`
   );
   let result = await res.json();
   weather = result;
